@@ -1,0 +1,561 @@
+html {
+      scroll-behavior: smooth;
+    }
+body{
+    font-family: sans-serif;
+}
+h1,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+  opacity: 0.8;
+}
+h2{
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+.hero{
+    /* border: 1px solid red; */
+    height: 400px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+}
+.pagi-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+.cards-title,
+.list-title{
+    margin-top: 40px;
+    color: #026fff;
+}
+.pagi-list-title {
+  margin-top: 45px;
+  color: #026fff;
+}
+.pagi {
+  margin: 1%;
+  margin-bottom: 1em;
+  width: 48%;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #FFF;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  transition: all 0.1s;
+}
+.pagi:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+.pagi img {
+  width: 100%;
+  max-width: 2400px;
+  height: 200px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.pagi-details {
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: #FFF;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+.pagi-description {
+  text-align: left;
+  opacity: 0.8;
+}
+.pagi-url {
+    color: #056fff;
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.pagi-url:hover{
+    color: #333;
+    border: 1px solid;
+}
+#particles-js{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.contenedor-texto .titulo {
+    position: absolute;
+     font-size: 40px;
+     font-weight: normal;
+     color: #fff;
+}
+.contenedor-texto .escrito {
+     font-weight: bold;
+     color: #026fff;
+     font-style: normal;
+}
+.contenedor-texto p {
+     margin-bottom: 40px;
+     line-height: 20px;
+}
+.header{
+    background-color: #0E0E0E;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: normal;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+figure{
+    margin: 0;
+}
+.header a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+}
+.header a:hover{
+    background: #073576;
+    transition: 0.6 all line;
+}
+.menu{
+    height: inherit;
+}
+.header ul{
+    display: flex;
+    height: inherit;
+}
+.header ul li{
+    height: inherit;
+}
+.header a{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+.portfolio {
+  background: #fafafa;
+  padding: 20px;
+}
+.project{
+    box-shadow: 0 0 6px 7px rgba(0,0,0,.2);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.project-course,
+.project-date {
+  margin: 10px 0;
+  opacity: 0.9;
+}
+.project-course{
+    font-size: 13px;
+}
+.project-description {
+  font-size: 15px;
+  letter-spacing: 1;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+.project strong {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1;
+  font-weight: 560;
+}
+.project .fa-html5{
+    color: #e96228;
+    font-size: 1rem;
+}
+.project .fa-css3{
+    color: #026fff;
+}
+.project .fa-js{
+    color: #f5de19;
+    font-size: 1rem;
+    background: black;
+}
+.project .fa-php{
+    color: #7377ad;
+    font-size: 1.5rem;
+}
+.project .fa-database{
+    color: #de8b00;
+}
+.project-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.project-details {
+  width: 70%;
+}
+.project-imageContainer {
+  width: 30%;
+}
+.project-imageContainer .project-image{
+    max-width: 100%;
+}
+.tarjetitas{
+    display: flex;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    overflow: hidden;
+    margin: 20px;
+    padding: 0 15px 15px;
+    text-align: center;
+    transition: all 0.15s;
+}
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+.card img{
+    max-width: 2400px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+/* contacto */
+.contact{
+    bottom: 0px;
+    width: 100%;
+    color: #d9d9d9;
+    background: #111;
+    padding: 1rem 0 1rem 0;
+}
+.main-content{
+    display: flex;
+    justify-content: space-between;
+}
+.main-content .box{
+    flex-basis: 33.3%;
+}
+.main-content .left.box{
+    padding: 0 22px 0 0;
+}
+.box h2{
+    font-size: 1.125rem;
+    color: #d9d9d9;
+    margin-bottom: 1rem;
+}
+.arr-barra{
+    position: relative;
+}
+.arr-barra::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 5px;
+    background-color: #026fff;
+    margin: 0 0 .2rem -2px;
+}
+.box .content{
+    margin: 2rem 0 0 0;
+}
+.left .content .social{
+    margin: 20px 0 0 0;
+}
+.left .content .social a{
+    padding: 0 2px;
+}
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    color: #ffff;
+    background: #1a1a1a;
+    margin-top: 10px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.left .content .social a span:hover{
+    background: #026fff;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #026fff;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.form-email input, textarea{
+    background: #0E0E0E;
+    width: 100%;
+    color: white;
+    padding: 5px 5px 5px 2px;
+    margin: 10px 0;
+    border: none;
+    border-bottom:  1px solid #fff;
+    resize: none;
+}
+.form-email input:focus, textarea:focus{
+    outline: none;
+    color: #f5f2f2; */
+}
+/* /contacto */
+.footer{
+  padding: 10px;
+  font-size: 0.9375rem;
+  background: #151515;
+  text-align: center;
+}
+.footer span{
+  color: #656565;
+}
+.footer a{
+  color: #026fff;
+  text-decoration: none;
+}
+.footer a:hover{
+  text-decoration: underline;
+}
+button{
+    background: #3355FF;
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    margin: 10px auto;
+}
+button:hover,
+button:focus{
+    background: #026fff;
+    color: #fff;
+    transition: background-color 0.5s ease-out;
+    outline: 0;
+}
+.container {
+  /* border: 1px solid red; */
+  max-width: 2400px;
+  flex: 1; /*igual que poner width: 100%;*/
+  margin: 0 20px 0 20px;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+.burguer-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0, .8);
+    justify-content: center;
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    color: #FFF;
+    display: none;
+    z-index: 4;
+}
+#buttonUp{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba( 5, 111, 255, .9);
+    justify-content: center;
+    position: fixed;
+    color: #FFF;
+    font-size: 25px;
+    display: flex;
+    z-index: 4;
+    bottom: 100px;
+    right: 22px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transform: scale(0);
+}
+#buttonUp:hover{
+    transform: scale(1.1);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+#object{
+	background-color: #fe5652;
+	visibility: hidden;
+}
+ /* Desktop first */
+@media screen and (max-width: 1023px) {
+    .portafolio{
+        padding: 0;
+    }
+    .container{
+        padding: 0 1em;
+    }
+    .regresar{
+        right: 18px;
+    }
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+@media screen and (max-width: 768px){
+
+    .burguer-button{
+        display: block;
+    }
+    .hero .titulo{
+        font-size: 2em;
+    }
+    .header{
+        display: block;
+        height: auto;
+    }
+    .header ul{
+        display: block;
+    }
+    .header ul li{
+        height: 50px;
+
+    }
+    .header a{
+        justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: .5em;
+    }
+    .header .logo{
+        text-align: center;
+    }
+    .cards{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        background: rgba( 5, 111, 255, .9);
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    .menu.is-active{
+        left: 0;
+    }
+
+    .tarjetitas{
+        flex-wrap: wrap;
+    }
+    .project{
+
+        display:block;
+    }
+    .project-imageContainer{
+        width: auto;
+    }
+    .project-details{
+        width: auto;
+    }
+    .pagi{
+        width: auto;
+        flex-shrink: 1;
+    }
+    .pagi img{
+        width: 100%;
+    }
+    .regresar{
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .project-details{
+        font-size: 12px;
+    }
+    .pagi-details{
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+    .contact{
+        height: auto;
+        padding: 1em 0;
+        display: block;
+    }
+    .social{
+        margin: 1em;
+    }
+    .social-link{
+        margin: 5px 10px;
+    }
+    .footer{
+        display: block;
+        border: 1px solid transparent;
+        text-align: center;
+    }
+    .regresar{
+        width: 40px;
+        height: 40px;
+        bottom: 90px;
+    }
+}
+
+@media screen and (max-width: 320px){
+
+}
