@@ -338,9 +338,9 @@ figure{
     border-bottom:  1px solid #fff;
     resize: none;
 }
-.form-email input:focus, textarea:focus{
+.form-email input:focus, textarea:focus {
     outline: none;
-    color: #f5f2f2; */
+    color: #f5f2f2; 
 }
 /* /contacto */
 .footer{
@@ -377,10 +377,10 @@ button:focus{
     outline: 0;
 }
 .container {
-  /* border: 1px solid red; */
-  max-width: 2400px;
-  flex: 1; /*igual que poner width: 100%;*/
-  margin: 0 20px 0 20px;
+  /*border: 1px solid red;*/ 
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
